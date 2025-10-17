@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
+    <script>
+function botao() {
+alert("Olá! Você clicou no botão.");
+}
+</script>
 <body>
     <div id="bloco-1">
         <img src="logo.png" alt="logo">
@@ -16,7 +21,7 @@
         <input type="email" name="email" class="email" placeholder="Email" required>
         <label for="senha"></label>
         <input type="password" name="senha" id="senha" placeholder="Senha" required>
-        <input type="submit" value="Entrar" id="entrar">
+        <input type="submit" value="Entrar" id="entrar" onclick="botao()">
         </form>
     </div>
     <div id="bloco-2">
@@ -37,4 +42,5 @@
         </form>
     </div>
 </body>
+
 </html>
