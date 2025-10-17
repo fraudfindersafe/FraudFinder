@@ -1,0 +1,115 @@
+body {
+    background-color: #0B0819;
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+    justify-self: center;
+    font-family: 'Poppins'; 
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    background-color: #050310;
+    color: white;    
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px; 
+}   
+
+div:hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+div:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top left, #020024 0%, #090979 100% );
+  filter: blur(20px);
+  opacity: var(0.7);
+}
+
+div::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+}
+
+img {
+    position: absolute;
+    height: 600px;
+    width: 430px;
+    margin: -225px auto auto -10px;
+}
+
+h1 {
+    position: absolute;
+}
+
+#e {
+    margin-top: 150px;
+}
+
+p {
+    position: absolute;
+}
+
+.email, #senha {
+    text-align: left;
+    background-color: #0A0A14;
+    color: grey;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    height: 10px;
+}
+
+.email {
+    position: absolute;
+    margin-top: 210px;
+}
+
+#senha {
+    position: absolute;
+    margin-top: 265px;
+}
+
+#entrar, #cadastrar {
+  position: absolute;
+  text-align: center;
+  justify-self: center;
+  background: linear-gradient(to bottom, #1C1984, #504af5);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer; 
+  border-radius: 10px;
+  width: 230px;
+  height: 40px;
+  margin-top: 320px;
+}
+
+ul {
+    position: absolute;
+    margin-top: 80px;
+    color: rgb(163, 163, 163);
+    font-size: 14px;
+}
+
+input {
+    justify-self: center;
+}
