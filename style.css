@@ -1,0 +1,189 @@
+:root {
+    --color-bg: #050310 ;
+    --color-card: #080241c7;
+    --color-primary: #10327ed9 ;
+    --color-primary-hover: #4338ca;
+    --color-text: #ffffff;
+    --color-muted: #b3b3b3;
+    --color-border: rgba(255, 255, 255, 0.1);
+
+    --radius: 1 rem;
+    --shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    --transition: 0.25s ease-in-out;
+    --container-width: 1200px ;
+
+    --font-main: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(247deg,rgba(2, 0, 36, 1) 50%, rgba(9, 9, 121, 1) 100%);    font-family: var(--font-main);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+.login-card {
+    border-radius: 1rem; 
+    overflow: hidden;
+}
+.container-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 50px;
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+.card-fraud {
+    background-color: var(--color-card);
+    box-shadow: var(--shadow);
+    border-radius: 30px;
+    padding: 2rem;
+    transition: transform var(--transition), box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-fraud:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: var(--color-text);
+    font-weight: 700;
+    margin-bottom: 1rem;   
+}
+
+p {
+    color: var(color-muted);
+}
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
+    color: black;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    transition: border-color var(--transition), background-color var(--transition);
+    }
+
+    .form-control:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: var(--color-primary);
+    box-shadow: none;
+    }
+
+    .form-select {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    transition: border-color var(--transition), background-color var(--transition);
+    }
+
+    .form-select:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: var(--color-primary);
+    box-shadow: none;
+    }
+
+    .btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--color-text);
+    font-weight: 600;
+    transition: background-color var(--transition), transform var(--transition);
+    }
+
+    .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+    }
+
+    .table {
+    width: 100%;
+    color: var(--color-text);
+    margin-top: 1rem;
+    }
+
+    .table th, .table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    }
+
+    .table th {
+    color: var(--color-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+    .container-main {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .card-fraud {
+        padding: 1.5rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}   
+
+    .login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    }
+
+    .login-image {
+    background-image: url("../IMAGES/logo.png");
+    transform: translateY(-60px);
+    margin-left: -170px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: var(--radius);
+    box-shadow: none;
+    min-height: 100px;
+    width: 37.5rem; 
+    height: auto;
+}
+
+.input-group .form-control {
+    height: 2.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#togglePassword {
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    font-size: 0.9rem;
+}
+
+label {
+    color: white;
+}
+
+.footer-login {
+        margin-top: 1.25rem;
+        text-align: center;
+        color: var(--color-muted);
+        font-size: .9rem;
+        }
